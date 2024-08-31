@@ -9,8 +9,8 @@
 ### https://www.youtube.com/watch?v=b123EURtu3I&feature=youtu.be
 ### https://www.nytimes.com/crosswords/game/sudoku/easy
 
-load "stdlib.ring"
-load "guilib.ring"
+load "stdlibclasses.ring"
+load "lightguilib.ring"
 load "SudokuPuzzles.ring"               ### A File with SUDOKU Puzzles to Solve
 
 ###----------------------------------
@@ -235,6 +235,7 @@ Func DrawWidget()
 
     workWidget = new qWidget()
     {
+        setWinIcon(self,"../icon.png")
         setWindowTitle('Sudoku')
         setStyleSheet('background-color:White')
 
